@@ -1,25 +1,22 @@
-%define real_name CDB_File
+%define module CDB_File
 
 Summary:	Extension for access to cdb databases
-Name:		perl-%{real_name}
+Name:		perl-%{module}
 Version:	0.96
 Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/%{real_name}-%{version}.tar.gz
-Patch0:		CDB_File-perl510.diff
+URL:		http://search.cpan.org/dist/%{module}
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 CDB_File is a module which provides a Perl interface to Dan Berstein's cdb
 package.
 
 %prep
-
-%setup -q -n %{real_name}-%{version} 
-%patch0 -p0
+%setup -q -n %{module}-%{version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -40,8 +37,8 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc ACKNOWLEDGE CHANGES COPYRIGHT README
-%dir %{perl_vendorarch}/auto/CDB_File
-%{perl_vendorarch}/auto/CDB_File/*.so
-%{perl_vendorarch}/*.p*
+%{perl_vendorarch}/auto/CDB_File
+%{perl_vendorarch}/CDB_File.pm
+%{perl_vendorarch}/bun-x.pl
 %{_mandir}/*/*
 
