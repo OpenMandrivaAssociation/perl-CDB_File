@@ -3,7 +3,7 @@
 Summary:	Extension for access to cdb databases
 Name:		perl-%{module}
 Version:	0.96
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
