@@ -43,3 +43,38 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/CDB_File.pm
 %{perl_vendorarch}/bun-x.pl
 %{_mandir}/*/*
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.970.0-2
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Sun Apr 17 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.970.0-1
++ Revision: 653980
+- update to new version 0.97
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 0.960.0-2mdv2011.0
++ Revision: 555690
+- rebuild
+
+* Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.960.0-1mdv2010.0
++ Revision: 402099
+- rebuild using %%perl_convert_version
+
+* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.96-2mdv2009.0
++ Revision: 268372
+- rebuild early 2009.0 package (before pixel changes)
+
+* Thu Apr 17 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.96-1mdv2009.0
++ Revision: 195211
+- new version
+  drop undocumented patch (doesn't apply anymore)
+
+* Mon Feb 11 2008 Oden Eriksson <oeriksson@mandriva.com> 0.95-1mdv2008.1
++ Revision: 165057
+- import perl-CDB_File
+
+
+* Mon Feb 11 2008 Oden Eriksson <oeriksson@mandriva.com> 0.95-1mdv2008.1
+- initial Mandriva package 
