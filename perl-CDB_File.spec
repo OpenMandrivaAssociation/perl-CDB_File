@@ -8,7 +8,7 @@ Release:	4
 Summary:	Extension for access to cdb databases
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
+URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
