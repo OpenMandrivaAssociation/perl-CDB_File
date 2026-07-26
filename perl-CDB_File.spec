@@ -1,15 +1,13 @@
 %define upstream_name    CDB_File
-%define upstream_version 1.05
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.05
+Release:	2
 
 Summary:	Extension for access to cdb databases
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://github.com/toddr/CDB_File
-Source0:	https://cpan.metacpan.org/authors/id/T/TO/TODDR/CDB_File-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/T/TO/TODDR/CDB_File-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -20,7 +18,7 @@ CDB_File is a module which provides a Perl interface to Dan Berstein's cdb
 package.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -61,9 +59,7 @@ rm -rf %{buildroot}
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.960.0-1mdv2010.0
 + Revision: 402099
-- rebuild using %%perl_convert_version
-
-* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.96-2mdv2009.0
+- rebuild using %1.05 Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.96-2mdv2009.0
 + Revision: 268372
 - rebuild early 2009.0 package (before pixel changes)
 
